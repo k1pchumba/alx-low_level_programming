@@ -1,7 +1,7 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
- * main -print numbers between 00 t0 89
+ * main - print numbers between 00 to 89
  *
  * Return: Always 0 (success)
  */
@@ -21,15 +21,17 @@ int main(void)
 			{
 				putchar(e);
 				putchar(i);
-				if (i == 58 && e == 56)
+				if (i == 57 && e == 56)
 				{
 					break;
-					putchar(',');
-					putchar('');
 				}
-				i++;
+				putchar(',');
+				putchar('');
 			}
-			e++;
-			putchar('\n');
-			return (0);
-
+			i++;
+		}
+		e++;
+	}
+	putchar('\n');
+	return (0);
+}
