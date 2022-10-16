@@ -4,42 +4,28 @@
  * main - entry point
  *
  * Return: Always 0 (success)
- */
-int main(void)
+*/
+ int main(void)
 {
-	int i, e, g;
+	int num1, num2, num3;
 
-	i = 48;
-	e = 48;
-	g = 48;
-
-	while (e < 58)
+	for (num1 = 0; num1 < 8; num1++)
 	{
-		i = 48;
-		while (i < 58)
+		for (num2 = num1 + 1; num2 < 9; num2++)
 		{
-			g = 48;
-			while (g < 58)
+			for (num3 = num2 +1; num3 < 10; num3++)
 			{
-				if (e != i && e != g && i != g && e < i && i < g)
-				{
-					putchar(e);
-					putchar(i);
-					putchar(g);
-					if (i == 56 && e == 55 && g == 57)
-					{
-						break;
-					}
-					putchar(',');
-					putchar('');
-				}
-				g++;
-			}
-			i++;
-		}
-		e++;
-	}
-	putchar('\n');
-	return (0);
-}
+				putchar((num1 % 10) + '0');
+				putchar((num2 % 10) + '0');
+				putchar((num3 % 10) + '0');
 
+				if (num1 == 7 && num2 ==8 && num3 == 9)
+					continue;
+				putchar(',');
+				putchar('');
+			}
+		}
+	}
+	putcha('\n');
+	return(0);
+}
