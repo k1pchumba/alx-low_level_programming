@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (success)
 */
- int main(void)
+int main(void)
 {
 	int num1, num2, num3;
 
@@ -13,13 +13,13 @@
 	{
 		for (num2 = num1 + 1; num2 < 9; num2++)
 		{
-			for (num3 = num2 +1; num3 < 10; num3++)
+			for (num3 = num2 + 1; num3 < 10; num3++)
 			{
 				putchar((num1 % 10) + '0');
 				putchar((num2 % 10) + '0');
 				putchar((num3 % 10) + '0');
 
-				if (num1 == 7 && num2 ==8 && num3 == 9)
+				if (num1 == 7 && num2 == 8 && num3 == 9)
 					continue;
 				putchar(',');
 				putchar('');
@@ -27,5 +27,5 @@
 		}
 	}
 	putcha('\n');
-	return(0);
+	return (0);
 }
