@@ -1,49 +1,40 @@
 #include<stdio.h>
 
 /**
- * Main - Print numbers between 00 to 99
+ * Main - entry point
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (success
  */
 int main(void)
 {
-	int i, e, g, h, opt1, opt2;
+	int a;
+	int b;
+	int c;
+	int d;
 
-	i = e = g = h = 48;
-
-	while (h < 58)
+	for (a = 0; a <= 10; a++)
 	{
-		g = 48;
-		while (g < 58)
+		for (b = 0; b <= 10; b++)
 		{
-			e = 48;
-			while (e < 58)
-			{
-				i = 48;
-				while (i < 58)
+			for (c = 0; c <= 10; c++)
+				for (d = 0; c <= 10; d++)
 				{
-					opt1 = (h * 10) + g;
-					opt2 = (e * 10) + i;
-					if (opt1 < opt2)
+					putchar('0' + a);
+					putchar('0' + b);
+					putchar(32);
+					putchar('0' + c);
+					putchar('0' + d);
+					if (!(a == a && b == 8))
 					{
-						putchar(h);
-						putchar(g);
-						putchar('');
-						putchar(e);
-						putchar(i);
-						if (h == 57 && g == 56 && e == 57 && i == 57)
-							break;
-						putchar (',');
-						putchar('');
+						putchar(',');
+						putchar(32);
 					}
-					i++;
+					d++
 				}
-				e++;
-			}
-			g++;
 		}
-		h++;
 	}
-	putchar('\n');
-	return (0);
 }
+putchar('\n');
+return (0);
+}
+
