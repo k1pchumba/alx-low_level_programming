@@ -1,10 +1,11 @@
 #include<stdio.h>
 
 /**
- * Main - entry point
+ * Main - Entry point
  *
- * Return: Always 0 (success
+ * Return: Always 0 (success)
  */
+
 int main(void)
 {
 	int a;
@@ -24,7 +25,7 @@ int main(void)
 					putchar(32);
 					putchar('0' + c);
 					putchar('0' + d);
-					if (!(a == a && b == 8))
+					if (!(a == 9 && b == 8))
 					{
 						putchar(',');
 						putchar(32);
@@ -32,9 +33,6 @@ int main(void)
 					d++
 				}
 		}
-	}
+	} putchar('\n');
+	return (0);
 }
-putchar('\n');
-return (0);
-}
-
