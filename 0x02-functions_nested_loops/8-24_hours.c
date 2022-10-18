@@ -6,7 +6,6 @@
  * jack_bauer - Begin here
  */
 
-int main(void)
 void jack_bauer(void)
 {
 	int a, b, c, d;
