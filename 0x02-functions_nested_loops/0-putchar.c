@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * *main - Begin here
- * *
- * *Return: Value of 0 success
+ * main - Begin here
+ *
+ * Return: Value of 0 success
  */
 
 int main(void)
