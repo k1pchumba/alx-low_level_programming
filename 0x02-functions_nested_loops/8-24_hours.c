@@ -1,8 +1,6 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
  * jack_bauer - Begin here
  */
 
