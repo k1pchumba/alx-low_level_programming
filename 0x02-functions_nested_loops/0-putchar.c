@@ -8,15 +8,13 @@
  */
 int main(void)
 {
-	int i = 0;
-	char c;
-	char s[] = "_putchar\n";
+	char text[] = "_putcher";
+	int i;
 
-	while (i <= 9)
+	for (i = 0; i < 8; i++)
 	{
-		c = s[i];
-		_putchar(c);
-		i++;
+		putchar(text[i]);
 	}
+	_putcher('\n');
 	return (0);
-}
+	}
