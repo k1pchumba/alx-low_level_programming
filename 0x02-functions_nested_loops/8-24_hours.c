@@ -1,9 +1,12 @@
 #include "main.h"
 
 /**
- *jack_bauer - Begin here
+ * main - check the code
+ *
+ * jack_bauer - Begin here
  */
 
+int main(void)
 void jack_bauer(void)
 {
 	int a, b, c, d;
