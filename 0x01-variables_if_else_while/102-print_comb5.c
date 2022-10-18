@@ -10,29 +10,22 @@ int main(void)
 {
 	int a;
 	int b;
-	int c;
-	int d;
 
-	for (a = 0; a <= 10; a++)
+	for (a = 0; a <= 98; a++)
 	{
-		for (b = 0; b <= 10; b++)
-		{
-			for (c = 0; c <= 10; c++)
-				for (d = 0; c <= 10; d++)
+		for (b = a + 1; b <= 99; b++)
 				{
-					putchar('0' + a);
-					putchar('0' + b);
-					putchar(32);
-					putchar('0' + c);
-					putchar('0' + d);
-					if (!(a == 9 && b == 8))
+					putchar((a / 10) + '0');
+					putchar((a % 10) + '0');
+					putchar(' ');
+					putchar((b / 10) + '0');
+					putchar((b % 10) + '0');
+					if (a == 98 && b == 99)
 					{
+						continue;
 						putchar(',');
-						putchar(32);
+						putchar(' ');
 					}
-					d++;
-				}
-		}
 	} putchar('\n');
 	return (0);
 }
