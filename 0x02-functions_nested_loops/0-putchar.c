@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include<alx.h>
 
 /**
  * main - entry point
