@@ -1,20 +1,20 @@
-#include<stdio.h>
-#include"main.h"
-
+#include <stdio.h>
+#include "main.h"
 /**
- * main - entry point
- *
- * Return: Always 0 (success)
+ * *main - Begin here
+ * *
+ * *Return: Value of 0 success
  */
+
 int main(void)
 {
-	char text[] = "_putcher";
-	int i;
+		char text[] = "_putchar";
+			int i;
 
-	for (i = 0; i < 8; i++)
-	{
-		putchar(text[i]);
-	}
-	_putcher('\n');
-	return (0);
-	}
+		for (i = 0; i < 8; i++)
+				{
+			_putchar(text[i]);
+			}
+		_putchar('\n');
+		return (0);
+}
