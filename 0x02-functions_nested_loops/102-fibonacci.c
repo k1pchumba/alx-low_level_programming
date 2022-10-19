@@ -20,7 +20,7 @@ int main(void)
 			n1 = n2;
 			n2 = sum;
 			if (i < 50)
-				prinf(", ");
+				printf(", ");
 			}
 	printf("\n");
 	return (0);
